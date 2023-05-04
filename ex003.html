@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Page</title>
+	<style>
+body {
+	background-color: #195673;
+}
+
+h1 {
+	color: #FFFFFF;
+}
+
+h2 {
+	color: yellow;
+}
+	</style>
+</head>
+<body>
+	<h1>Hello, World!</h1>
+	<h2 id="h1"></h2>
+<script>
+	//alert("Hello, world!")
+	//confirm("Receive our news?")
+	var el = document.getElementById("h1")
+	s = 'JavaScript'
+	el.innerHTML = `I am learning ${s}`
+	var n1 = Number(prompt("Type a number: "))
+	var n2 = Number(prompt("Type another number: "))
+	var soma = n1 + n2
+	alert(`The sum is ${soma}`)
+</script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Page</title>
+	<style>
+body {
+	background-color: #195673;
+	font: Consola 16pt;
+	color: white;
+}
+	</style>
+</head>
+<body>
+	<h1>Hello, World!</h1>
+	<h2 id="h1"></h2>
+<script>
+	var nome = prompt("Whats your name? ")
+	document.writeln(`Your name has ${nome.length} chars`)
+	document.writeln(`Your name upper case is ${nome.toUpperCase()}`)
+	document.writeln(`Your name lower case is ${nome.toLowerCase()}`)
+	var num = Number(prompt("Type a number: "))
+	var nF = num.toFixed(2).replace('.', ',')
+	document.writeln(`The number formated is ${nF}`)
+	var curr = prompt("Type the value: ")
+	//avanced formating
+	cur = curr.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+	document.write(`The value is ${curr}`)
+</script>
+</body>
+</html>
